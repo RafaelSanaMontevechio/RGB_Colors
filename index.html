@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/cssReset.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./css/styles.css" />
+
+    <title>Trabalho Prático Módulo 1</title>
+  </head>
+  <body>
+    <div class="main">
+      <div class="title">
+        <h1>RGB COLORS</h1>
+      </div>
+
+      <div class="container">
+        <div class="internalDivs">
+          <label for="red">(R) Red: </label>
+          <input
+            class="inputRangeRed"
+            type="range"
+            id="red"
+            min="0"
+            max="255"
+            step="1"
+            value="0"
+          />
+          <input
+            class="inputRed"
+            type="text"
+            id="valueRed"
+            value="0"
+            disabled
+          />
+        </div>
+
+        <div class="internalDivs">
+          <label for="green">(G) Green: </label>
+          <input
+            class="inputRangeGreen"
+            type="range"
+            id="green"
+            min="0"
+            max="255"
+            step="1"
+            value="0"
+          />
+          <input
+            class="inputGreen"
+            type="text"
+            value="0"
+            id="valueGreen"
+            disabled
+          />
+        </div>
+
+        <div class="internalDivs">
+          <label for="blue">(B) Blue: </label>
+          <input
+            class="inputRangeBlue"
+            type="range"
+            id="blue"
+            min="0"
+            max="255"
+            step="1"
+            value="0"
+          />
+          <input
+            class="inputBlue"
+            type="text"
+            value="0"
+            id="valueBlue"
+            disabled
+          />
+        </div>
+
+        <hr />
+        <section>
+          <div class="colorPanel" id="colorPanel"></div>
+        </section>
+        <div class="info">
+          Made by Rafael Sana Montevechio &#9996;
+        </div>
+      </div>
+    </div>
+    <script src="./js/script.js"></script>
+  </body>
+</html>
